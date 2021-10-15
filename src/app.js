@@ -5,6 +5,7 @@ const geocode = require("./utils/geocode");
 const forecast =  require("./utils/weatherStack");
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 //console.log(__dirname)//directory --> /Users/valv/Desktop/UDMY/web-server/src
 //console.log(__filename)//filepath
@@ -107,6 +108,6 @@ app.get("*",(req,res)=>{
 
 
 //SERVER
-app.listen(3000,()=>{
-    console.log("Server listening on port 3000")
+app.listen(port,()=>{
+    console.log("PORT")
 }); //devlopment port 3000

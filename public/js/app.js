@@ -22,7 +22,7 @@ weatherForm.addEventListener("submit",(event)=>{
     
     
     const searchValue = searchElement.value
-    const weather = fetch(`http://localhost:3000/weather?address=${searchValue}`)
+    const weather = fetch(`/weather?address=${searchValue}`)
     weather.then(res => {
         return res.json()
     }).then(data => {
