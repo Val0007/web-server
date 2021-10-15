@@ -19,7 +19,7 @@ const forecast = (lat,long,callback)=>{
             }
             else{
                 const data = body
-                callback(undefined,`It is currently ${data.current.temperature},feels like ${data.current.feelslike}`)
+                callback(undefined,`It is currently ${data.current.temperature},feels like ${data.current.feelslike}. This is due to a new push. `)
                 }
     
     })
