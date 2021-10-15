@@ -5,6 +5,7 @@ data.then(res => {
     return res.json() //this returns a promise which could be fulfilled with a value
 }).then(res => {
     console.log(res)
+    console.log("FETCH REQ COMPLETED")
 })
 
 const messageOne = document.getElementById("msg-1")
