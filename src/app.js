@@ -61,6 +61,9 @@ app.get("/help/*",(req,res)=>{
     })
 })
 
+app.get("/redirect",(req,res)=>{
+    res.redirect("TweetToGram://")
+})
 
 app.get("/weather",(req,res)=>{
 
